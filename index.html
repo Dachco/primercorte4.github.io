@@ -7,16 +7,20 @@
   <style>
     *{
       margin: 0;
+      padding:0;
     }
     
     body {
-      padding: 0;
       font-family: Arial, sans-serif;
       font-size: 16px;
       line-height: 1.5;
       background-color: whitesmoke;
       box-sizing: border-box;
+      position: relative;
+      padding-bottom: 50px;
+      min-height: 100vh;
     }
+    
     header{
       padding: 10px;
       padding-top: 20px;
@@ -30,7 +34,7 @@
     }
     
     .img{
-      box-shadow: 1px 10px  10px 10px rgba(0, 0, 0, 0.09);
+      box-shadow: 1px 10px  10px 10px #00000017;
       border-radius: 10px;
       padding: 5px;
       padding-top: 10px;
@@ -52,11 +56,7 @@
       margin: 0 auto;
       font-size: 16px;
       text-align: center;
-    }
-
-    .container{
-      margin: 0;
-    }
+    } 
 
     table{
       margin: 0 auto;
@@ -79,18 +79,18 @@
       color: #1776CA;
       text-decoration: none;
     }
-
-    footer{
-      background-color: #9fcaff;
-      color:ghostwhite;
+    .footer--contenido {
+      height: 40px; 
+      background-color: #9fcaff6b;
+      color: gray;
       position: absolute;
       width: 100%;
       bottom: 0;
     }
-
     footer h1{
-      text-align: left;
-      padding: 5px;
+     text-align: left;
+     font-weight: normal;
+     padding: 5px;
     }
   </style>
 </head>
@@ -137,10 +137,10 @@
     </tbody>
   </table>
 </div>
-
 <footer>
-  <h1>Derechos Reservados</h1>
+  <div class="footer--contenido">
+    <h1>Derechos Reservados 2023</h1>
+  </div>
 </footer>
-
 </body>
 </html>
