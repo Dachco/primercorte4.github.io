@@ -6,18 +6,23 @@
   <title>Bitacora De Actividades</title>
   <style>
     body {
-      margin: 0;
+      margin: 10px;
       padding: 0;
       font-family: Arial, sans-serif;
       font-size: 16px;
       line-height: 1.5;
+      background-color: white;
     }
+    header{
+      display: flex;
+      padding: 10px ;
+      box-shadow: 10px 10px  20px 20px rgba(0, 0, 0, 0.09);
+      border-radius: 10px;
 
-    header {
-      background-color: #3768B0;
-      color: #BB9500;
-      text-align: center;
-      padding: 20px;
+    }
+    .encabezado {
+      color: black;
+      text-align: right;
     }
 
     h1, h2 {
@@ -37,18 +42,20 @@
     }
 
     th, td {
-      border: 1px solid #B2685F;
+      border: 1px solid #0000;
       padding: 10px;
       text-align: left;
     }
 
     th {
-      background-color: #FC6E5B;
-      color: #428DFC
+      background-color: #9fcaff;
+      color: #428DFC;
+      border-radius: 10px;
     }
 
     a {
       color: #1776CA;
+      text-decoration: none;
     }
 
     @media screen and (max-width: 768px) {
@@ -67,15 +74,19 @@
       th, td {
         padding: 5px;
       }
+
     }
   </style>
 </head>
 <body>
-<header>
-  <h1>Bitacora de Actividades PWII</h1>
-  <h2>Desarrollado por: (nombre)</h2>
+  <header>
+    <img  class="img" src="./images/iuc.png" alt="Universitaria de Colombia" />
+    
+    <div class="encabezado">
+    <h1>Bitacora de Actividades Programación Web II</h1>
+    <h2>Por: David chang Coley</h2>
+  </div>
 </header>
-<img src="./images/iuc.png" alt="Universitaria de Colombia" />
 <div class="container">
   <table>
     <thead>
