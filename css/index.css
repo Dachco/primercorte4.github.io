@@ -1,7 +1,6 @@
 *{
   margin: 0;
   box-sizing: border-box;
-
 }
 
 body{
@@ -12,7 +11,6 @@ body{
   position: relative;
   padding-bottom: 50px;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 header{
@@ -35,7 +33,7 @@ header{
   color: black;
   padding: 5px;
   text-align: center;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .encabezado h1 {
@@ -52,7 +50,7 @@ header{
 
 .contenedor{
   width: 80%;
-  height: 400px;
+  height: 350px;
   background-color:#9999e89a;
   overflow: hidden;
   margin: 0 auto;
@@ -69,7 +67,7 @@ header{
   width: 100%;
   display: flex;
   justify-content: center;
-  bottom: -375px;
+  bottom: -320px;
   gap: 10px;
 }
 
@@ -103,6 +101,7 @@ header{
   width: 400vw;
   display: flex;
   transition: 400ms ease-in-out;
+  overflow-x: hidden;
 }
 
 .firstslide,.secondslide,.thirdslide,.fourthslide{
@@ -166,7 +165,7 @@ footer h1{
   margin-top: 80px;
 
   border-radius: 10px;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.24 );
+  box-shadow: 6px 6px 20px rgb(0, 0, 0, 0.24 );
 
   background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
 
