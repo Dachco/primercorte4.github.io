@@ -3,96 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".\css\index.css" />
   <title>Bitacora De Actividades</title>
-  <style>
-    *{
-      margin: 0;
-      padding:0;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      background-color: whitesmoke;
-      box-sizing: border-box;
-      position: relative;
-      padding-bottom: 50px;
-      min-height: 100vh;
-    }
-    
-    header{
-      padding: 10px;
-      padding-top: 20px;
-    }
-    .encabezado {
-      color: black;
-      padding: 5px;
-      margin: 0 auto;
-      padding-top: 40px;  
-      padding-bottom: 30px;
-    }
-    
-    .img{
-      box-shadow: 1px 10px  10px 10px #00000017;
-      border-radius: 10px;
-      padding: 5px;
-      padding-top: 10px;
-      background-color: white;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .img__content{
-      width: 100%;
-    }
-
-    h1 {
-      margin: 0 auto;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    h2 {
-      margin: 0 auto;
-      font-size: 16px;
-      text-align: center;
-    } 
-
-    table{
-      margin: 0 auto;
-    }
-
-    th, td {
-      font-size: small;
-      padding: 10px;
-      text-align: center;
-
-    }
-
-    th {
-      background-color: #9fcaff;
-      color: ghostwhite;
-      border-radius: 10px;
-    }
-
-    a {
-      color: #1776CA;
-      text-decoration: none;
-    }
-    .footer--contenido {
-      height: 40px; 
-      background-color: #9fcaff6b;
-      color: gray;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-    }
-    footer h1{
-     text-align: left;
-     font-weight: normal;
-     padding: 5px;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -100,47 +12,73 @@
       <img  class="img__content" src="./images/iuc.png" alt="Universitaria de Colombia" />
     </div>
     <div class="encabezado">
-    <h1>Bitacora de Actividades Programación Web II</h1>
-    <h2>Por: David chang Coley</h2>
-  </div>
-</header>
+      <h1>Bitacora de Actividades Programación Web II</h1>
+      <h2>Por: David chang Coley</h2>
+    </div>
+  </header>
+
 <div class="container">
-  <table>
-    <thead>
-    <tr>
-      <th>Nombre Actividad</th>
-      <th>Enlace de la Actividad</th>
-      <th>Desarrollo de Actividades</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Primera Actividad</td>
-      <td><a href="actividad_01.html" target="_blank">actividad_01</a></td>
-      <td><a href="#" target="_blank">Personalizada</a></td>
-    </tr>
-    <tr>
-      <td>Segunda Actividad</td>
-      <td><a href="actividad_02.html" target="_blank">actividad_02</a></td>
-      <td><a href="#" target="_blank">Personalizada</a></td>
-    </tr>
-    <tr>
-      <td>Tercera Actividad</td>
-      <td><a href="actividad_03.html" target="_blank">actividad_03</a></td>
-      <td><a href="#" target="_blank">Personalizada</a></td>
-    </tr>
-    <tr>
-      <td>Cuarta Actividad</td>
-      <td><a href="actividad_04.html" target="_blank">actividad_04</a></td>
-      <td><a href="#" target="_blank">Personalizada</a></td>
-    </tr>
-    </tbody>
-  </table>
+
+  <div class="slider">
+
+      <input type="radio" name="slider" id="slideOne" checked>
+      <input type="radio" name="slider" id="slideTwo">
+      <input type="radio" name="slider" id="slideThree">
+      <input type="radio" name="slider" id="slideFouth">
+
+      <div class="buttons">
+          <label for="slideOne"></label>
+          <label for="slideTwo"></label>
+          <label for="slideThree"></label>
+          <label for="slideFouth"></label>
+      </div>
+
+      <div class="content">
+          <section class="firstslide card">
+              <div class="card__person"></div>
+              <h2 class="card__name">Primera Actividad</h2>
+              <p class="card__position">Frontend Developer</p>
+              <div class="card__media">
+                  <a href="#" class="card__icon card__icon--facebook"></a>
+              </div>
+          </section>
+          <section class="secondslide card">
+            <div class="card__person"></div>
+            <h2 class="card__name">Segunda Actividad</h2>
+            <p class="card__position">Frontend Developer</p>
+        
+            <div class="card__media">
+                <a href="#" class="card__icon card__icon--facebook"></a>
+            </div>
+        </section>
+          <section class="thirdslide card">
+            <div class="card__person"></div>
+            <h2 class="card__name">Tercera Actividad</h2>
+            <p class="card__position">Frontend Developer</p>
+        
+            <div class="card__media">
+                <a href="#" class="card__icon card__icon--facebook"></a>
+            </div>
+        </section>
+          <section class="fourthslide card">
+            <div class="card__person"></div>
+            <h2 class="card__name">Cuarta Actividad</h2>
+            <p class="card__position">Frontend Developer</p>
+            <div class="card__media">
+                <a href="#" class="card__icon card__icon--facebook"></a>
+            </div>
+        </section>
+      </div>
+
+  </div>
+
 </div>
+
 <footer>
   <div class="footer--contenido">
     <h1>Derechos Reservados 2023</h1>
   </div>
 </footer>
+
 </body>
 </html>
