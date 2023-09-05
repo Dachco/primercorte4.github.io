@@ -1,94 +1,91 @@
 *{
-    margin: 0;
-    padding:0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: black;
-    box-sizing: border-box;
-    position: relative;
-    padding-bottom: 50px;
-    min-height: 100vh;
-  }
-  
-  header{
-    padding: 10px;
-    padding-top: 20px;
-    background-color: white;
-  }
+  margin: 0;
+  box-sizing: border-box;
 
-  .encabezado {
-    color: black;
-    padding: 5px;
-    margin: 0 auto;
-    padding-top: 40px;  
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  
-  .img{
-    box-shadow: 1px 10px  10px 10px #00000017;
-    border-radius: 10px;
-    padding: 5px;
-    padding-top: 10px;
-    background-color: white;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+}
 
-  .img__content{
-    width: 100%;
-  }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: whitesmoke;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
-  h1 {
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
+header{
+  padding: 10px 20px;
+}
+.img{
+  box-shadow: 1px 10px  10px 10px #00000017;
+  border-radius: 10px;
+  padding: 10px 10px 5px 10px;
+  background-color: white;
+  max-width: 415px;
+  margin: 0 auto;
+}
 
-  h2 {
-    margin: 0 auto;
-    font-size: 16px;
-    text-align: center;
-  } 
+.img__content{
+  width: 100%;
+}
 
-  .container{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(23, 12, 12);
-    margin: 0 50px;
+.encabezado{
+  color: black;
+  padding: 5px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.encabezado h1 {
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.encabezado h2 {
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+} 
+
+.contenedor{
+  width: 80%;
+  height: 400px;
+  background-color:#9999e89a;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .slider input{
-    visibility: hidden;
-    display: none;
+  visibility: hidden;
+  display: none;
 }
 
-.buttons{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 100px;
-    gap: 10px;
+.botones{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: -375px;
+  gap: 10px;
 }
 
-.buttons label{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    opacity: 0.5;
-    cursor: pointer;
-    z-index: 1;
-    transition:  300ms ease-in-out;
+.botones label{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1;
+  transition:  300ms ease-in-out;
 }
 
-.buttons label:hover{
-    scale: 1.2;
-    opacity: 1;
+.botones label:hover{
+  scale: 1.2;
+  opacity: 1;
 }
 
 .slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
@@ -102,130 +99,80 @@
 }
 
 .content{
-    position: relative;
-    width: 400vw;
-    display: flex;
-    transition: 400ms ease-in-out;
+  position: absolute;
+  width: 400vw;
+  display: flex;
+  transition: 400ms ease-in-out;
 }
 
 .firstslide,.secondslide,.thirdslide,.fourthslide{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
+  box-sizing: content-box;
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
 }
 
 .firstslide{
-    background-color: orange;
+  background-color: orange;
 }
-
 .secondslide{
-    background-color: brown;
-    margin-right: 30px;
+  background-color: brown;
 }
-
 .thirdslide{
-    background-color: green;
+  background-color: green;
 }
 .fourthslide{
-    background-color: blue;
+  background-color: blue;
 }
+
 .slider input:nth-child(1):checked ~ .content{
-    left: 0;
+  left: 0;
 }
 
 .slider input:nth-child(2):checked ~ .content{
-    left: -100vw;
+  left: -100vw;
 }
 
 .slider input:nth-child(3):checked ~ .content{
-    left: -200vw;
+  left: -200vw;
 }
 
 .slider input:nth-child(4):checked ~ .content{
-    left: -300vw;
+  left: -300vw;
 }
-
-.content h1{
-    font-size: 5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 
 .footer--contenido {
-    height: 40px; 
-    background-color: #9fcaff6b;
-    color: gray;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
-  footer h1{
-   text-align: left;
-   font-weight: normal;
-   padding: 5px;
-  }
+  background-color: #9fcaff6b;
+  color: gray;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
+footer h1{
+ text-align: left;
+ font-size: 15px ;
+ padding: 5px;
+}
 
+.card{
+  width: 200px;
+  min-height: 200px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 80px;
 
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.24 );
 
-  .card{
-    width: 200px;
-    min-height: 200px;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 70px;
-  
-    border-radius: 10px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.24 );
-  
-    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
-  
-    background-size: 100% ;
-    background-repeat: no-repeat;
-  
-    text-align: center;
-    padding: .1px;
-  }
-  
-  .card__person{
-    background-image: url('people.jpg');
-    background-size: contain;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 105px;
-    border-radius: 50%;
-  
-  }
-  
-  .card__name{
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .card__media{
-    margin-top: 40px;
-    width: 100%;
-    height: 30px;
-    border-top: 1px solid #b3a2a2;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .card__icon{
-    width: 25%;
-    height: 100%;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: center;
-  }
-  
-  .card__icon--facebook{
-    background-image: url('icons/facebook.svg');
-  }
+  background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+
+  text-align: center;
+  padding: .1px;
+}
