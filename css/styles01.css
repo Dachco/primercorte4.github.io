@@ -12,10 +12,13 @@ body {
   background-size:contain;
   background-position: center;
   height: 0 auto;
-  border: 2px solid rgb(205, 141, 39);
-
+  border: 2px solid #cd8d27;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px;
+  margin: auto;
 }
-
 
 fieldset {
   width: 310px;
@@ -23,6 +26,7 @@ fieldset {
   background-color: #f9dfc080;
   line-height: 1.6em;
   margin: auto;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 fieldset h1{
@@ -69,25 +73,50 @@ input[type='submit']:hover {
 
 .banner h1{
   text-align: center;
-  background-color: rgb(249, 223, 192,.5);
+  width: fit-content;
+  margin: auto;
 }
 
 .cursos{
-text-align: center;
-background-color: rgb(249, 223, 192,.5);
-width: 100%;
-border-radius: 10px;
-margin: 0 auto;
-margin-bottom: 10px;
+  text-align: center;
+  background-color: rgb(249, 223, 192,.5);
+  width: fit-content;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .textos{
   text-align: center;
-  background-color: #f9dfc080;
+  width: fit-content;
+  margin: auto;
+  max-width: 400px;
+  margin-bottom: 20px;
 }
+
 
 .tabla_cursos h1{
   font-size: medium;
+}
+
+.tabla_cursos{
+  padding: 5px;
+}
+.cursos label:hover {
+  border: 2px solid #cd8d27;
+  background-color: #cd8d27b8;
+  border-radius: 10px;
+  padding: 2px;
+  color: #1e1c1cd6;
+  cursor: pointer;
+}
+
+.checkbox:checked + .principal{ 
+  background-color: rgb(249, 223, 192);
+  padding: 2px;
+  border-radius: 10px;
+  border: 2px solid  #cd8d27;
 }
 
 .principal + .tabla_cursos {
@@ -107,11 +136,14 @@ margin-bottom: 10px;
   height: 20px;
   cursor: pointer;
 }
+
 .checkbox:checked + .custom-checkbox {
   font-weight: bold;
+
 }
 
 .checkbox:checked + .custom-checkbox + .tabla_cursos {
   opacity: 1;
   height: 100px;
 }
+
