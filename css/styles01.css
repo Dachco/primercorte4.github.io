@@ -18,6 +18,7 @@ body {
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px;
   margin: auto;
+  margin-top: 10px;
 }
 
 fieldset {
@@ -60,11 +61,13 @@ input[type='submit']:hover {
   color: #ffffff;
   cursor: pointer;
 }
+
 .title {
   float: left;
   width: 160px;
   clear: left;
 }
+
 .submit {
   width: 310px;
   text-align: center;
@@ -95,7 +98,6 @@ input[type='submit']:hover {
   margin-bottom: 20px;
 }
 
-
 .tabla_cursos h1{
   font-size: medium;
 }
@@ -103,6 +105,7 @@ input[type='submit']:hover {
 .tabla_cursos{
   padding: 5px;
 }
+
 .cursos label:hover {
   border: 2px solid #cd8d27;
   background-color: #cd8d27b8;
