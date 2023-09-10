@@ -16,7 +16,7 @@ figcaption {
 body {
   color: #666666;
   background-color: white;
-  /* background-image: url(/img/FF_8_bg.jpg); */
+  background-image: url(/img/FF_8_bg.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,48 +78,18 @@ nav li a.current {
   display: block;
 }
 
-@media (max-width: 600px) {
 
-  .encabezado{
-    background-size: 155%;
-  }
-  
-  nav li {
-    background-color:  #e7b33bb4;
-    width: 20%;
-    box-shadow: none;
-    position: relative;
-  }
-
-  .menu-toggle:checked ~ ul {
-    flex-direction: column;
-    padding: 10px 0 0 0;
-  }
-    
-  .menu-icon {
-    display: block;
-    padding: 10px;
-    background-color:  #e7b33bb4;
-    width: fit-content;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  nav ul li {
-    margin-bottom: 5px;
-  }
-}
 /* ASIDE A LA DERECHA */
 
 aside {
   text-align: left;
-  border-top: 1px solid black;
-  float: left;
+  float: right;
   width: 30%;
-  max-width: 300px;
+  max-width: 350px;
+  min-width: 300px;
   box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: none;
 }
 
 aside h2{
@@ -155,11 +125,10 @@ aside section p{
 /* Contenido */
 
 .courses {
-  float: right;
-  width: 70%; 
+  float:left;
+  width: 60%; 
   padding: 20px;
   box-sizing: border-box;
-  border-left: 1px solid black;
 }
 
 .courses h1{
@@ -174,5 +143,56 @@ aside section p{
 
 figure{
   margin: 0;
-  padding-top: 10px;
+  padding-top: px;
+}
+
+@media (max-width: 750px) {
+
+  .encabezado{
+    background-size: 117%;
+  }
+  
+  nav li {
+    background-color:  #e7b33bb4;
+    width: 20%;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .menu-toggle:checked ~ ul {
+    flex-direction: column;
+    padding: 10px 0 0 0;
+  }
+    
+  .menu-icon {
+    display: block;
+    padding: 10px;
+    background-color:  #e7b33bb4;
+    width: fit-content;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+
+  aside {
+    text-align: center;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: none;
+  }
+  .courses {
+    text-align: center;
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
 }
