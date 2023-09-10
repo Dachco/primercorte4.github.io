@@ -149,6 +149,7 @@ figure{
 @media (max-width: 825px) {
   body{
     background-size: 310%;
+    background-attachment: fixed;
   }
 
   .encabezado{
