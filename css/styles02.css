@@ -20,6 +20,7 @@ body {
   background-color: white;
   background-image: url(https://live.staticflickr.com/65535/53177053543_a60d7c86e7_b.jpg);
   background-position: top;
+  background-position-y: 40px;
   background-repeat: no-repeat;
   background-size: cover ;
   background-attachment: fixed;
@@ -48,12 +49,14 @@ footer {
 nav ul {
   list-style: none;
   display: flex;
+  background-color: black;
+  width: 100%;
+  margin-right: 10px;
 }
 
 nav li {
-  margin-right: 20px;
-  background-color:  #e7b33bb4;
-  padding: 7px;
+  background-color:  #e7b33b;
+  margin: 10px;
 }
 .menu-toggle {
   display: none;
@@ -67,17 +70,18 @@ nav li {
 nav li a {
   color: black;
   text-decoration: none;
+  padding: 10px;
 }
 
-nav li a:hover,
-nav li a.current {
+nav li a:hover{
   color: whitesmoke;
+  background-color: #e7b33b;
+  padding-top: 10px;
 }
 
 .menu-toggle:checked ~ #menu{
   display: block;
 }
-
 
 /* ASIDE A LA DERECHA */
 
