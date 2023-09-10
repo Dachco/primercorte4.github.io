@@ -16,7 +16,7 @@ figcaption {
 body {
   color: #666666;
   background-color: white;
-  background-image: url(/img/FF_8_bg.jpg);
+  background-image: url(https://live.staticflickr.com/65535/53177053543_a60d7c86e7_b.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,12 +29,11 @@ body {
 
 .encabezado{
   height: 390px;
-  background-image: url(/img/FF_8_logo2.png);
+  background-image: url(http://drive.google.com/uc?export=view&id=10yYzodE_rEkSwt9ZT_96XT0Fz5N8nz1v);
   background-position: top;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-
 /* EDICION DEL NAV*/
 nav,
 footer {
@@ -90,6 +89,7 @@ aside {
   box-sizing: border-box;
   border: 1px solid black;
   border-bottom: none;
+  margin-right: 30px;
 }
 
 aside h2{
@@ -143,13 +143,13 @@ aside section p{
 
 figure{
   margin: 0;
-  padding-top: px;
+  padding-top: 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 825px) {
 
   .encabezado{
-    background-size: 117%;
+    background-size: 125%;
   }
   
   nav li {
@@ -178,7 +178,7 @@ figure{
   nav ul li {
     margin-bottom: 5px;
   }
-
+ 
   aside {
     text-align: center;
     float: none;
@@ -187,6 +187,9 @@ figure{
     box-sizing: border-box;
     border: none;
     border-bottom: none;
+  }
+  aside .descripcion{
+    margin-top: -90px;
   }
   .courses {
     text-align: center;
