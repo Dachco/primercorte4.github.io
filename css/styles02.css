@@ -306,5 +306,9 @@ article:hover{
   body{
     margin: 8px 20px 20px 20px;
   }
+  .wrapper{
+    background-size: 240%;
+  }
+
 
 }
