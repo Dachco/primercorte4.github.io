@@ -212,6 +212,11 @@ article:hover{
   .encabezado{
     background-size: 104%;
   }
+  .wrapper{
+    background-size: 300%;
+    background-attachment: fixed;
+  }
+
   
   .aside1 {
     float: none;
