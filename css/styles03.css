@@ -12,21 +12,20 @@ body{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top;
-    height: 100vh;
     position: relative;
 }
 
 .encabezado header h1 {
     text-align: center;
     color: rgb(41, 82, 84);
-    width: 100%;
-    max-width: 900px; 
+    width: 90%;
+    max-width: 800px; 
     margin: auto;
     padding: 10px;
     border-radius: 10px 10px 100px 100px;
     box-shadow: 0px 0px 100px 1px #0000ff;
     margin-bottom: 40px;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
 }
 .asideizq{
     grid-row: span 3;
@@ -46,36 +45,35 @@ main{
     background-color: rgba(95, 158, 160, 0.6);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-left: 10px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
 }
 .nav a:hover{
     background-color: cadetblue;
 }
 
 .mapa{
-    margin-top: 30px;
     margin-left: 15px;
     max-width: 350px;
 }
 
-.foot {
-    
-    grid-column: span 2;
-}
 
 .foot nav ul {
     display: flex;
     list-style: none;
+    margin-top:15px ;
 }
 
-.foot nav ul li, a {
+.foot nav ul a{
     text-decoration: none;
-    padding: 10px 0 10px 10px;
-    
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .prueba{
@@ -94,12 +92,13 @@ footer{
 /* Fomulario*/
 form {
     max-width: 200px;
-    padding: 5px;
+    padding: 3px;
     margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f965;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 label {
@@ -111,7 +110,7 @@ label {
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
-    width:fit-content;
+    width: 100%;
     padding: 5px 0 5px 0;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -150,7 +149,13 @@ input[type="submit"]:hover {
 @media (max-width: 700px) {
 
     main{
-        grid-template-columns: 5% 50% 40%;
+        grid-template-columns: 3% 50% 50%;
     }
-
+    .mapa{
+        margin-left: 0px;
+        max-width: 350px;
+    }
+    form {
+        margin-left: 40px;
+    }
 }
