@@ -45,6 +45,7 @@ body {
   float: left;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: red;
 }
 
 .push_1, .pull_1,
@@ -59,6 +60,7 @@ body {
 .push_10, .pull_10,
 .push_11, .pull_11 {
   position: relative;
+  background-color: blue;
 }
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
